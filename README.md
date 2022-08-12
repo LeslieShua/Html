@@ -31,3 +31,14 @@ transform은 초기값이 없기때문에 @keyframes fadeIn{0% {opacity: 0;}100%
 3. bootstrap 또한 cdn을 가져와서 넣어주어야 한다.
 
 
+# clone4-layoutsize/layout_size 그리드 800이상 3개 600이상 2개
+<pre>
+이미지에 마우스 hover시 (hide)글자 나타남 transform
+card에 flex를 주어서 각 flex:1씩 가지게끔 함
+애니메이션 없이 transform 과 opacity 기능만으로 애니메이션같은 기능을 줌
+</pre>
+
+# Tip 
+1. width 600미만시 그리드가 3개로 Column으로 쌓이면서 가로 세로 값이(비율) 틀려도 background:cover로 화면에 꽉차지만,
+2. 600 이상은 Row로 정사각형으로 나열 비율이 가로 세로가 같아야 한다. 
+
