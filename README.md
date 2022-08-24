@@ -42,3 +42,12 @@ card에 flex를 주어서 각 flex:1씩 가지게끔 함
 1. width 600미만시 그리드가 3개로 Column으로 쌓이면서 가로 세로 값이(비율) 틀려도 background:cover로 화면에 꽉차지만,
 2. 600 이상은 Row로 정사각형으로 나열 비율이 가로 세로가 같아야 한다. 
 
+
+
+
+# clone7-autoCount
+
+setTimeout 500 후 시작
+function animateValue로(id, start, end, duration) 매개변수(parameter)로 넣어준뒤 animateValue("value", 시작점, 끝나는 지점, 속도);로 사용
+데이터 받아서 넣기 추가예정++
+
