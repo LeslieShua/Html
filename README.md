@@ -4,6 +4,8 @@
 id를 배열로 쓰려면  '+examStateArr[i]+' 와 같이 해주어야함
 특히 html에서는 배열을 바로 적용시키기가 어렵기때문에 
 javascript로 `${}`보관법을 잘 활용해야함
+
+https://bfotool.com/ko/html-to-javascript
 </pre>
 
 # 요약
