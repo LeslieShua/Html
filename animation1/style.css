@@ -1,0 +1,213 @@
+html, body{
+  margin:0;
+  padding:0;
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4, ul, li, p, a, blockquote{
+  margin:0;
+  padding:0;
+  font-size:100%;
+  font-weight: normal;
+  color: #000;
+  text-decoration:none;
+  line-height: 1;
+}
+img {
+  vertical-align: top;
+}
+em{
+  font-style: normal;
+}
+.hidden{
+  display: none;
+}
+/* --------TYPOGRAPHY-----------*/
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+/* --------HEADER SLOGAN--------*/
+header{
+  position: relative;
+  background: #2c2f36;
+  height: 81px;
+  line-height: 81px;
+  text-align: center;
+  bottom:0;
+}
+header .logo a{
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%); 
+}
+header .logo a em{
+  font-weight: bold;
+}
+.slogan {
+  padding: 107px 0 97px;
+  background: #e2e2e2;
+}
+.slogan h2{
+  font-size: 50px;
+  color: #11262e;
+}
+.slogan p{
+  font-size: 28px;
+  color: #11262e;
+  line-height: 37px;
+  margin:24px 0 40px;
+}
+.slogan a{
+  background: #00c494;
+  height: 71px;
+  line-height: 71px;
+  color: #fff;
+  font-size: 28px;
+  padding: 0 62px;
+  border-radius:4px;
+  display:inline-block;
+}
+/* ----------testimoial---------*/
+.testimonial{
+  background: #f0f0f0;
+  padding:53px 0;
+  text-align: center;
+}
+.testimonial blockquote{
+  line-height: 27px;
+}
+.testimaonial blockquote p{
+  font-size: 28px;
+}
+.testimonial blockquote small{
+  font-size: 19px;
+  font-style: italic;
+}
+/* ----------device---------*/
+.device {
+  padding: 97px 0 216px;
+}
+.device h3{
+  font-size: 35px;
+  color: #2c2f36;
+  margin-bottom: 26px;
+}
+.device p{
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.appliance img {
+  position: absolute;
+  left:70px;
+  opacity:0;
+}
+.animate, .grow-img, .animate_down{
+  animation:fadeIn 1s forwards ease-in;
+  transition:2s ease-in-out;
+}
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
+
+#phone {
+  margin-top:80px;
+}
+
+#phone.animate{
+  transform:translateX(38.8em);
+}
+#monitor.animate{
+  transform:translateX(22em);
+}
+
+/*----------- features -----------*/
+.features{
+  background: RGB(255, 255, 255);
+  padding:81px 0;
+}
+.features .item{
+  text-align: center;
+}
+.features .item img{
+  width: 0;
+  height: 0;
+}
+.features .item img.grow-img{
+  width: 172px;
+  height: 172px;
+}
+.features .item h4{
+  color: #2c2f36;
+  font-size: 32px;
+  margin-top: 15px;
+  text-transform: uppercase; /*대문자*/
+  opacity: 0;
+}
+
+/*----------- Location -----------*/
+.location{
+  position: relative;
+}
+.stripes {
+/*가로배열*/
+  display: flex;
+}
+.stripes .stripe{
+  width: 10%;
+  height: 0; /*512*/
+}
+.stripes .stripe.animate_down{
+  height: 512px;
+}
+#s1 {background: #2c2f36;}
+#s2 {background: #444850;}
+#s3 {background: #35383c;}
+#s4 {background: #1e2026;}
+#s5 {background: #444850;}
+#s6 {background: #2b2d30;}
+#s7 {background: #212326;}
+#s8 {background: #36383c;}
+#s9 {background: #444850;}
+#s10 {background: #2c2f36;}
+
+.contents {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  padding:155px 0 120px;
+  text-align: start;
+}
+.location .map{
+  position: relative;
+}
+#location_map{
+  margin-left: 90px;
+}
+#radar{
+  position: absolute;
+  left:100px;
+  top:-60px;
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation{
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+.contents h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.contents p{
+  font-size: 28px;
+  color: #fff;
+}
