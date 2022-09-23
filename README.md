@@ -51,5 +51,17 @@ card에 flex를 주어서 각 flex:1씩 가지게끔 함
 
 setTimeout 500 후 시작
 function animateValue로(id, start, end, duration) 매개변수(parameter)로 넣어준뒤 animateValue("value", 시작점, 끝나는 지점, 속도);로 사용
-데이터 받아서 넣기 추가예정++
+
+
+# TopButton
+
+해당 폴더는 아래로 스크롤을 내릴시 window full height 기준  1920 x 1080  400이 내려갔을때(height: 680) btn이 표시됩니다.
+예) if (documnet.querySelector(window).scrollTop() > 400) //scroll량이 400보다 크면 show Class를 documnet.querySelector('#fixa').addClass('show');
+    addClass 함수를 사용해서 fixa에 show 클레스를 추가해준다 이때 css에선 .show에 visibility: visible; poacity: 1; 속성을줘서 버튼이 보이게하고.
+    사라질때(#fixa{ }속성에)는 transition: background-color .3s, opacity .5s, visibility .5s;를 주어서 서서히 사라지게하는 효과를 준다. 
+
+    <div id="fixa"><button style="border:0; background-color: transparent;"class=”button-solid” onclick='window.scrollTo({top: 0, behavior: "smooth"});'>
+      <img src="" alt="Top" width="100px"></button></div> //버튼을 생성하면 border이 생기니 배경색과 border속성을 조정해주었다.
+
+#somthing elese
 
