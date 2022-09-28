@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" >
+  <!-- jQuery cdn -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- EmailJS CDN -->
+  <script type="text/javascript"
+ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- EmailJS 초기화 -->
+  <script type="text/javascript">
+   emailjs.init('GsiBdD1XlQ2L6u1BV')
+  </script>
+  <script defer src="java.js"></script>
+</head>
+
+<body>
+
+  <form id="form">
+    <div class="field">
+      <label for="name">name</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+      <label for="email">email</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div class="field">
+      <label for="message">message</label>
+      <input type="text" name="message" id="message">
+    </div>
+
+  
+    <input type="submit" id="button" value="Send Email" >
+  </form>
+</body>
+
+</html>
