@@ -1,0 +1,12 @@
+/* 페이지 탑 버튼 */
+#fixa{ position:fixed; z-index: 999; right:10px;
+  bottom:30px; opacity: 0;   
+  transition: background-color .3s, opacity .5s, visibility .5s; 
+
+}
+#fixa.show {
+opacity: 1;
+visibility: visible;
+
+}
+
